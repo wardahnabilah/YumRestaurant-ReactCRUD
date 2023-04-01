@@ -1,0 +1,9 @@
+footer {
+    padding-block: 1rem;
+    position: fixed;
+    inset: auto 0 0;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--neutral-light);
+    font-size: var(--fs-small);
+}
