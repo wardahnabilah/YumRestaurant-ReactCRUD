@@ -1,7 +1,9 @@
 header {
-    background-color: var(--primary-color);
+    position: fixed;
+    inset: 0 0 auto;
     display: flex;
     justify-content: space-between;
+    background-color: var(--primary-color);
     box-shadow: var(--shadow-dark);
 }
 
