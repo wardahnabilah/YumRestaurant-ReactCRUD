@@ -1,15 +1,19 @@
+.container--filled {
+    height: auto;
+}
+
 .form--filled {
-    width: 18rem;
+    margin: 0;
+    padding: 2rem 2rem;
+    width: 16rem;
     height: auto;
     position: relative;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color2), var(--neutral-light));
 }
 
-h2 {
-    margin-bottom: 1rem;
-}
-
-.form--filled p {
-    font-size: 1.25rem;
+h3 {
+    text-transform: uppercase;
+    letter-spacing: .2rem;
 }
 
 .filled__item {
@@ -17,8 +21,13 @@ h2 {
     margin-bottom: 1rem;
 }
 
+.filled__item--name {
+    font-size: 1rem;
+    color: var(--neutral-dark-400);
+}
+
 .filled__item li {
-    margin-top: .5rem;
+    margin-top: .3rem;
     list-style: inside;
 }
 
@@ -28,13 +37,13 @@ i {
 }
 
 .icon__delete {
-    top: 1.25rem;
+    bottom: 1.25rem;
     right: 1.25rem;
     color: var(--danger-color);
 }
 
 .icon__edit {
     top: 1.25rem;
-    left: 1.25rem;
+    right: 1.25rem;
     color: var(--primary-color);
 }
