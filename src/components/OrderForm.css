@@ -1,5 +1,4 @@
 .container--order {
-    padding-top: 6rem;
     text-align: center;
 }
 
@@ -7,8 +6,7 @@
     margin: 2rem auto;
     padding: 2rem 2rem;
     width: clamp(18rem, 65vw, 26rem);
-    /* width: 18rem; */
-    aspect-ratio: 3 / 4;
+    height: 28rem;
     border-radius: 2rem;
     background-color: var(--accent-color);
     box-shadow: var(--shadow-brown);
@@ -25,6 +23,8 @@
 
 .form__item--table {
     display: grid;
+    justify-content: space-between;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 1.25rem;
 }
@@ -40,5 +40,7 @@
 }
 
 .form__input--btn {
-    background-color: var(--primary-color);
+    margin-top: 1rem;
+    background-color: var(--btn-color);
+    color: var(--neutral-light);
 }
