@@ -1,0 +1,40 @@
+.form--filled {
+    width: 18rem;
+    height: auto;
+    position: relative;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.form--filled p {
+    font-size: 1.25rem;
+}
+
+.filled__item {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.filled__item li {
+    margin-top: .5rem;
+    list-style: inside;
+}
+
+i {
+    position: absolute;
+    font-size: 1.5rem;
+}
+
+.icon__delete {
+    top: 1.25rem;
+    right: 1.25rem;
+    color: var(--danger-color);
+}
+
+.icon__edit {
+    top: 1.25rem;
+    left: 1.25rem;
+    color: var(--primary-color);
+}
