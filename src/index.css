@@ -1,0 +1,54 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+:root {
+    /* Colors */
+    --primary-color: rgb(169, 144, 126);
+    --accent-color: rgb(212, 194, 178);
+    --accent-color2: rgb(255, 242, 204);
+    --danger-color: rgb(178, 15, 15);
+    --neutral-light: rgb(255, 255, 255);
+    --neutral-dark: rgb(0, 0, 0);
+    --neutral-dark-400: rgba(0, 0, 0, .8);
+    --shadow-dark: 0 2px 16px 0 rgba(0, 0, 0, .25);
+    --shadow-brown: 0 2px 64px 0 rgba(169, 144, 126, .5);
+    --btn-color: rgb(97, 74, 74);
+
+    /* Font Sizes */
+    --fs-heading: 2.25rem; /* 36px */
+    --fs-body: 1.125rem; /* 18px */ 
+    --fs-small: .875rem; /* 14px */
+}
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3.8125rem;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: var(--fs-body);
+    color: var(--neutral-dark);
+}
+
+textarea {
+    resize: none;
+}
+
+/* Typography */
+h1 {
+    font-size: var(--fs-heading);
+}
+
+.container {
+    padding: 1rem 12%;
+}
