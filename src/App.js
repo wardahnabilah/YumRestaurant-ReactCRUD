@@ -1,3 +1,4 @@
+import { useState } from "react"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 import OrderForm from "./components/OrderForm"
@@ -5,9 +6,19 @@ import OrderFilled from "./components/OrderFilled"
 import './App.css'
 
 export default function App() {
-    
+    // Store the orders
+    const [orders, setOrders] = useState([])
+
+    // addOrder Function
     function addOrder(newOrder) {
-        console.log(newOrder);
+        setOrders(prev => {
+            return [
+                ...prev, 
+                newOrder
+            ]
+        })
+
+        console.log(orders);
     }
     
     return (
