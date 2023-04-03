@@ -21,6 +21,13 @@ export default function OrderForm(props) {
             }
         })
     }
+
+    // Function to pass inputValue to App.js
+    function submitOrder(event) {
+        props.onAdd(inputValue)
+
+        event.preventDefault()
+    }
     
     return(
         <div className="container--order">
@@ -33,7 +40,7 @@ export default function OrderForm(props) {
                     </div>
                     <input onChange={handleChange} className="form__input" value={inputValue.customerName} name="customerName" placeholder="Customer Name" type="text"/>
                     <textarea onChange={handleChange} className="form__input" value={inputValue.detailOrder} name="detailOrder" placeholder="Your Order" type="textarea" rows="6" cols="22"/>
-                    <button className="form__input form__input--btn" type="submit"> Add Order </button>
+                    <button onClick={submitOrder} className="form__input form__input--btn" type="submit"> Add Order </button>
                 </form>
             </div>
         </div>

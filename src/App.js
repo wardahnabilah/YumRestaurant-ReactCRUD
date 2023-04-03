@@ -5,11 +5,16 @@ import OrderFilled from "./components/OrderFilled"
 import './App.css'
 
 export default function App() {
+    
+    function addOrder(newOrder) {
+        console.log(newOrder);
+    }
+    
     return (
         <div>
             <Header />
             <div className="main__container">
-                <OrderForm />
+                <OrderForm onAdd={addOrder}/>
                 <OrderFilled />
             </div>
             <Footer />
