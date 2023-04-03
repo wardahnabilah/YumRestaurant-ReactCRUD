@@ -1,5 +1,6 @@
 .container--filled {
     height: auto;
+    margin-inline: auto;
 }
 
 .form--filled {
