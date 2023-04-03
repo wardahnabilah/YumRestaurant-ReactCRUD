@@ -5,6 +5,7 @@ header {
     justify-content: space-between;
     background-color: var(--primary-color);
     box-shadow: var(--shadow-dark);
+    z-index: 9999;
 }
 
 .header-logo img {
@@ -19,4 +20,19 @@ header {
 
 .nav__link {
     color: var(--neutral-light);
+}
+
+.toggle-button i {
+    color: var(--neutral-light);
+    display: none;
+}
+
+@media (max-width: 700px) {
+    nav {
+        display: none;
+    }
+
+    .toggle-button i {
+        display: block;
+    }
 }

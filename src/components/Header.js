@@ -7,6 +7,9 @@ export default function Header() {
             <div className="header-logo">
                 <a href="#"><img src={Logo} alt="" /></a>
             </div>
+            <div className="toggle-button">
+                <i class='bx bx-menu'></i>
+            </div>
             <nav>
                 <ul className='nav__list'>
                     <li className="nav__item"><a href="#" className="nav__link">Home</a></li>
