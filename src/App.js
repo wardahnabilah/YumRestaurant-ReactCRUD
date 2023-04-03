@@ -26,7 +26,12 @@ export default function App() {
             <Header />
             <div className="main__container">
                 <OrderForm onAdd={addOrder}/>
-                <OrderFilled />
+                { orders.map(order => {
+                    return <OrderFilled 
+                                tableNum={order.tableNumber}
+                                customerName={order.customerName}
+                                detailOrder={order.detailOrder} />
+                }) }
             </div>
             <Footer />
         </div>
