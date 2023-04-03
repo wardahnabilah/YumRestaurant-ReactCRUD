@@ -4,13 +4,23 @@ import './OrderForm.css';
 export default function OrderForm(props) {
     
     // Create state to save the input value
-    
+    const [inputValue, setInputValue] = useState({
+        tableNumber: "",
+        customerName: "",
+        detailOrder: ""
+    }) 
 
     // Function to set the inputValue when the input changed
-    
+    function handleChange(event) {
+        const {name, value} = event.target
 
-    // Function to pass inputValue to App.js
-    
+        setInputValue(prev => {
+            return {
+                ...prev,
+                [name]: value
+            }
+        })
+    }
     
     return(
         <div className="container--order">
@@ -19,10 +29,10 @@ export default function OrderForm(props) {
                 <form autoComplete="off">
                     <div className="form__item--table">
                         <h2>Table No.</h2>
-                        <input className="form__input" type="text" name="tableNumber"/>
+                        <input onChange={handleChange} className="form__input" value={inputValue.tableNumber} name="tableNumber" type="text"/>
                     </div>
-                    <input className="form__input" type="text" name="customerName" placeholder="Customer Name" />
-                    <textarea className="form__input" type="textarea" rows="6" cols="22" name="detailOrder" placeholder="Your Order" />
+                    <input onChange={handleChange} className="form__input" value={inputValue.customerName} name="customerName" placeholder="Customer Name" type="text"/>
+                    <textarea onChange={handleChange} className="form__input" value={inputValue.detailOrder} name="detailOrder" placeholder="Your Order" type="textarea" rows="6" cols="22"/>
                     <button className="form__input form__input--btn" type="submit"> Add Order </button>
                 </form>
             </div>
