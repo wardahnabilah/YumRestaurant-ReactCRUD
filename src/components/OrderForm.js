@@ -26,6 +26,13 @@ export default function OrderForm(props) {
     function submitOrder(event) {
         props.onAdd(inputValue)
 
+        // Empty form field when button is clicked
+        setInputValue({
+            tableNumber: "",
+            customerName: "",
+            detailOrder: ""
+        })
+
         event.preventDefault()
     }
     
