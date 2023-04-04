@@ -1,0 +1,5 @@
+.form__input--btn-cancel {
+    border: 2px solid var(--btn-color);
+    background-color: transparent;
+    color: var(--btn-color);
+}

@@ -6,7 +6,7 @@
     margin: 2rem auto;
     padding: 2rem 2rem;
     width: clamp(18rem, 65vw, 26rem);
-    height: 28rem;
+    height: auto;
     border-radius: 2rem;
     background-color: var(--accent-color);
     box-shadow: var(--shadow-brown);

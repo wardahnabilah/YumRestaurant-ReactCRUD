@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './OrderForm.css';
+import './OrderEdit.css';
 
 export default function OrderEdit(props) {
     
@@ -37,12 +38,13 @@ export default function OrderEdit(props) {
             <div className="form">
                 <form autoComplete="off">
                     <div className="form__item--table">
-                        <h2>Table Nooo.</h2>
+                        <h2>Table No.</h2>
                         <input onChange={handleChange} className="form__input" value={editedOrder.tableNumber} name="tableNumber" type="text"/>
                     </div>
                     <input onChange={handleChange} className="form__input" value={editedOrder.customerName} name="customerName" placeholder="Customer Name" type="text"/>
                     <textarea onChange={handleChange} className="form__input" value={editedOrder.detailOrder} name="detailOrder" placeholder="Your Order" type="textarea" rows="6" cols="22"/>
                     <button onClick={submitEditedOrder} className="form__input form__input--btn" type="submit"> Edit Order </button>
+                    <button onClick={() => props.cancelEdit()} className="form__input form__input--btn-cancel" type="submit"> Cancel </button>
                 </form>
             </div>
         </div>

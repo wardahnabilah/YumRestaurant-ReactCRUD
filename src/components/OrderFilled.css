@@ -20,6 +20,7 @@ h3 {
 .filled__item {
     text-align: left;
     margin-bottom: 1rem;
+    overflow: scroll;
 }
 
 .filled__item--name {

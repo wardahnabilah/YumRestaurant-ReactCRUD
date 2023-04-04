@@ -28,8 +28,6 @@ export default function App() {
                 newOrder
             ]
         })
-
-        console.log(orders);
     }
 
     // To delete an order
@@ -65,12 +63,17 @@ export default function App() {
             })
         )
     }
+
+    // To cancel edit order
+    function cancelEditOrder() {
+        setIsEdit(false)
+    }
     
     return (
         <div>
             <Header />
             <div className="main__container">
-                {isEdit ? <OrderEdit currentOrder={currentOrder} onUpdate={updateOrder}/> : <OrderForm onAdd={addOrder}/>}
+                {isEdit ? <OrderEdit cancelEdit={cancelEditOrder} currentOrder={currentOrder} onUpdate={updateOrder}/> : <OrderForm onAdd={addOrder}/>}
                 { orders.map(order => {
                     return <OrderFilled
                                 key={order.key}
