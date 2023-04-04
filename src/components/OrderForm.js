@@ -6,6 +6,7 @@ export default function OrderForm(props) {
     // Create state to save the input value
     const [inputValue, setInputValue] = useState({
         key: "",
+        id: "",
         tableNumber: "",
         customerName: "",
         detailOrder: ""
@@ -20,7 +21,8 @@ export default function OrderForm(props) {
             return {
                 ...prev,
                 [name]: value,
-                key: newKey
+                key: newKey,
+                id: newKey
             }
         })
     }
@@ -32,6 +34,7 @@ export default function OrderForm(props) {
         // Empty form field when button is clicked
         setInputValue({
             key: "",
+            id: "",
             tableNumber: "",
             customerName: "",
             detailOrder: ""
