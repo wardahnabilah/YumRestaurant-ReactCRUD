@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './OrderForm.css';
 import './OrderEdit.css';
 
@@ -31,6 +31,17 @@ export default function OrderEdit(props) {
 
         event.preventDefault()
     }
+
+    // Change the displayed order when clicking other order
+    useEffect(() => {
+        setEditedOrder({
+            key: props.currentOrder.id,
+            id: props.currentOrder.id,
+            tableNumber: props.currentOrder.tableNumber,
+            customerName: props.currentOrder.customerName,
+            detailOrder: props.currentOrder.detailOrder
+        })
+    }, [props])
     
     return(
         <div className="container--order">
