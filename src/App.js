@@ -39,6 +39,8 @@ export default function App() {
                     return order.key !== id
             })
         })
+
+        setIsEdit(false)
     }
 
     // To edit an order
