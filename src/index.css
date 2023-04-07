@@ -13,6 +13,7 @@
     --shadow-dark: 0 2px 16px 0 rgba(0, 0, 0, .25);
     --shadow-brown: 0 2px 64px 0 rgba(169, 144, 126, .5);
     --btn-color: rgb(97, 74, 74);
+    --btn-color-hover: rgb(97, 74, 74, .8);
 
     /* Font Sizes */
     --fs-heading: 2.25rem; /* 36px */

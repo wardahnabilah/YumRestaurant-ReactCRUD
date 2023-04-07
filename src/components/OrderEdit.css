@@ -3,3 +3,9 @@
     background-color: transparent;
     color: var(--btn-color);
 }
+
+.form__input--btn-cancel:hover {
+    cursor: pointer;
+    opacity: .8;
+    border-color: var(--btn-color-hover);
+}

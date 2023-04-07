@@ -2,6 +2,17 @@
     text-align: center;
 }
 
+.alert-text {
+    font-weight: bold;
+    color: var(--danger-color);
+    margin-bottom: 1.5rem;
+    display: none;
+}
+
+.alert-text.show {
+    display: block;
+}
+
 .form {
     margin: 2rem auto;
     padding: 2rem 2rem;
@@ -43,4 +54,9 @@
     margin-top: 1rem;
     background-color: var(--btn-color);
     color: var(--neutral-light);
+}
+
+.form__input--btn:hover {
+    cursor: pointer;
+    opacity: .8;
 }
