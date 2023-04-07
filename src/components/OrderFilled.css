@@ -20,7 +20,7 @@ h3 {
 .filled__item {
     text-align: left;
     margin-bottom: 1rem;
-    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .filled__item--name {
@@ -48,4 +48,9 @@ i {
     top: 1.25rem;
     right: 1.25rem;
     color: var(--primary-color);
+}
+
+.icon__edit:hover, .icon__delete:hover {
+    cursor: pointer;
+    opacity: .7;
 }
