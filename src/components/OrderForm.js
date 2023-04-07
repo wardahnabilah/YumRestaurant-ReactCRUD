@@ -17,6 +17,13 @@ export default function OrderForm(props) {
         const {name, value} = event.target
         let newKey = Math.ceil(Math.random() * 10000)
 
+        // Show alert if field is empty
+        if (value === "") {
+            document.querySelector(".alert-text").classList.add("show")
+        } else if (value !== "") {
+            document.querySelector(".alert-text").classList.remove("show")
+        }
+
         setInputValue(prev => {
             return {
                 ...prev,
@@ -29,6 +36,13 @@ export default function OrderForm(props) {
 
     // Function to pass inputValue to App.js
     function submitOrder(event) {
+        // Prevent submitting form with empty field
+        for(let property in inputValue) {
+            if(inputValue[property] === "") {
+                return
+            }
+        }
+        
         props.onAdd(inputValue)
 
         // Empty form field when button is clicked
@@ -47,6 +61,7 @@ export default function OrderForm(props) {
         <div className="container--order">
             <h1>Place Your Order</h1>
             <div className="form">
+                <p className="alert-text">Please fill the empty field</p>
                 <form autoComplete="off">
                     <div className="form__item--table">
                         <h2>Table No.</h2>
