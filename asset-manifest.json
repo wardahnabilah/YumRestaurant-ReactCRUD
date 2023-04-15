@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/YumRestaurant-ReactCRUD/static/css/main.fbe41047.css",
+    "main.js": "/YumRestaurant-ReactCRUD/static/js/main.004583b8.js",
+    "index.html": "/YumRestaurant-ReactCRUD/index.html",
+    "main.fbe41047.css.map": "/YumRestaurant-ReactCRUD/static/css/main.fbe41047.css.map",
+    "main.004583b8.js.map": "/YumRestaurant-ReactCRUD/static/js/main.004583b8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fbe41047.css",
+    "static/js/main.004583b8.js"
+  ]
+}
