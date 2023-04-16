@@ -12,9 +12,8 @@ export default function Header() {
             </div>
             <nav>
                 <ul className='nav__list'>
-                    <li className="nav__item"><a href="" className="nav__link">Home</a></li>
-                    <li className="nav__item"><a href="" className="nav__link">Menu</a></li>
-                    <li className="nav__item"><a href="" className="nav__link">Place Order</a></li>
+                    <li className="nav__item"><a href="#" className="nav__link">Home</a></li>
+                    <li className="nav__item"><a href="#" className="nav__link">Place An Order</a></li>
                 </ul>
             </nav>
         </header>
